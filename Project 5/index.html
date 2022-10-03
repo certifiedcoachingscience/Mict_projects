@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="CATALOGUE-removebg-preview.png" width:100px>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<header>
+
+<div class="hero-image">
+    <div class="hero-text">
+<h1> Save your favourite books and never miss out</h1>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="logo">
+        <img src="CATALOGUE-removebg-preview.png" alt="Logo">
+    </div>
+  </header>
+   
+   
+  <body>
+    <!--1-->
+    <fieldset>
+        <legend>Author name</legend>
+        <input id="authorName" type="text" placeholder="Name">
+        <input id="authorSurname" type="text" placeholder="Surname">
+        <button type="text" id="btnInsert">Submit!</button>/button>
+       </fieldset>
+
+       <fieldset>
+        <legend>Author Name</legend>
+        <div id="outPut"></div>
+       </fieldset>
+<!--1-->
+
+       <!--2-->
+       <fieldset>
+        <legend>Genre</legend>
+        <input id="genreName" type="text" placeholder="Name">
+        <button type="text" id="btnInsert1">Submit!</button>/button>
+       </fieldset>
+
+       <fieldset>
+        <legend>Genre</legend>
+        <div id="outPut"></div>
+       </fieldset>
+    <!--2-->
+
+    <!--3-->
+       <fieldset>
+        <legend>Book title</legend>
+        <input id="bookTitle" type="text" placeholder="Name">
+        <button type="text" id="btnInsert2">Submit!</button>/button>
+       </fieldset>
+
+       <fieldset>
+        <legend>Book Title</legend>
+        <div id="outPut"></div>
+       </fieldset>
+       <!--3-->
+  <!--4-->
+       <fieldset>
+        <legend>Review</legend>
+        <input id="ReviewBook" type="text" placeholder="Name">
+        <button type="text" id="btnInsert3">Submit!</button>/button>
+       </fieldset>
+
+       <fieldset>
+        <legend>Review</legend>
+        <div id="outPut"></div>
+       </fieldset>
+       <!--4-->
+  </body>
+
+<script>
+
+const authorName = document.getElementById("authorName");
+const authorSurname = document.getElementById("authorSurname");
+const  btnInsert = document.getElementById("btnInsert");
+const outPut = document.getElementById("outPut");
+
+const  genreName = document.getElementbyId("genreName");
+const  reviewBook = document.getElementbyId("reviewBook");
+const bookTitle = document.getElementbyId("bookTitle");
+
+btnInsert.onclick = function (){
+    const key = authorName.value;
+    const value = authorSurname.value;
+   
+    if(key && value){
+        authorName.setItem(key , value);
+        location.reload();
+    } 
+};
+
+for (let > 0; i < authorName.length; i++){
+
+    const key = authorName.key(i);
+    const value = authorName.getItem(key);
+
+};
+    
+    btnInsert1.onclick = function (){
+    const key = bookTitle.value;
+   
+    if(key && value){
+        bookTitle.setItem(key , value);
+        location.reload();
+    } 
+
+    for (let > 0; i < bookTitle.length; i++){
+
+const key = bookTitle.key(i);
+const value = bookTitle.getItem(key);
+
+};
+
+btnInsert2.onclick = function (){
+    const key = genreName.value;
+   
+    if(key && value){
+        genreName.setItem(key , value);
+        location.reload();
+    } 
+};
+
+    for (let > 0; i < genreName.length; i++){
+
+const key = genreName.key(i);
+const value = genreName.getItem(key);
+
+    };
+
+    btnInsert3.onclick = function (){
+    const key = reviewBook.value;
+   
+    if(key && value){
+        reviewBook.setItem(key , value);
+        location.reload();
+    } 
+};
+
+    for (let > 0; i < reviewBook.length; i++){
+
+const key = reviewBook.key(i);
+const value = reviewBook.getItem(key);
+
+    };
+}
+</script>
+</html>
+ 
+    
